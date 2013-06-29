@@ -5,7 +5,7 @@
 	</div>
 		<div id="sidebar_left">
 			<div id="container_left">
-				<h2 class="alth2r"><?php _e("Hot Spots","traveler"); ?></h2>
+				<h2 class="alth2r"><?php _e("Tour Đã Đi","traveler"); ?></h2>
 					<div class="random_post">
 						<?php 
 						$post = $wp_query->post;
@@ -34,7 +34,7 @@
 					<?php $permalink = get_permalink();
 					 	  echo hot_spots($text);
 					 	 ?>
-					 	  <a class="readmore" href="<?php $permalink;?>"><?php _e("...more","traveler");?></a>				
+					 	  	
 	 	  			</div>
 			<div style="clear:both;"></div>	
 		<?php endwhile; ?>		
@@ -48,7 +48,7 @@
  			
 </div><!-- Sidebar Left Ends -->
 <div id="middle"><!-- Midle Section -->
-	<h2  class="alth2m"><?php _e("Travel News","traveler"); ?></h2>
+	<h2  class="alth2m"><?php _e("Tin Tức Du Lịch","traveler"); ?></h2>
 	<?php 
 		$post = $wp_query->post;
 		$show = get_settings($shortname."_homePostCategory");
@@ -66,7 +66,7 @@
 		$do_not_duplicate = $post->ID;
 		?>
 		<div class="post_middle"><!-- Posts Midle Section -->
-			<h2><a  class="posts_link" title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>	
+			
 				<div class='photo'>
 					 <?php if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) 
 									{
@@ -74,15 +74,11 @@
 									 } else {
 												echo'<a href="'.get_permalink().'">'.home_thumbs($post->ID,'thumbnail').'</a>'; 
 							}?>
-				</div>			 	
-		<div class="entry">
+				</div>
+<a  class="posts_link" title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></br>								 			
 			<?php $permalink = get_permalink();
 				echo limit_content($text);
-				?>
-			 <a class="readmore" href="<?php $permalink;?>"><?php _e("...more","traveler");?></a><br/><br/>
-			 <span style="float:right;"><img alt="comments" src="<?php bloginfo('template_directory'); ?>/images/comments_grey-trans.png"/>
-			 <a href="<?php comments_link(); ?>"><?php comments_number(__("No comments","traveler"),__("1 comment","traveler"),__("% comments","traveler")); ?></a></span>
-			</div>
+			?>
 		</div><!-- Posts Midle Section Ends -->
 <?php endwhile; ?>	
 </div><!-- Midle Section Ends -->

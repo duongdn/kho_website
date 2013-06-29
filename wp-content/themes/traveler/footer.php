@@ -21,8 +21,7 @@
 
 		</div>
 	</div><div id="copyright">
-	<p><a href="<?php get_bloginfo('url'); ?>"><?php echo get_bloginfo('name') ?></a> <?php _e("is powered by","traveler");?> <a href="http://www.wikmag.com/traveler-4-0-travel-magazine-theme-by-gorillathemes.html">Gorilla Themes</a> <?php _e("and","traveler");?> 
-WordPress</p>
+	<p><a href="<?php get_bloginfo('url'); ?>"><?php echo get_bloginfo('name') ?></a> <?php _e("is powered by","khowebsite.net");?> <a href="http://www.khowebsite.net">khowebsite.net</a></p>
 </div>
 </div> <!-- Grid Ends -->  
 </div> <!-- Layout Ends -->

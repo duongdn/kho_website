@@ -11,7 +11,7 @@
 <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/images-slider/slider.css" />
-
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />	
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php wp_head(); ?>
 </head>
@@ -35,7 +35,7 @@
 		<div class="wrapper_left"><!-- Wrapper Left starts--> 					   			
    			<div id="menu_navigation"> <!-- Main Menu Starts-->
 			<ul id="menu-one" class="menu">
-			<li class="home-li"><a href="<?php echo get_option('home'); ?>/" class="on"><?php _e("Home","traveler");?></a></li>
+			<li ><a href="<?php echo get_option('home'); ?>/" class="on"><?php _e("Home","traveler");?></a></li>
 			<?php wp_list_pages('depth=1&sort_column=menu_order&title_li=' . __('') . '' ); ?>
  	  		</ul>  			
   		    </div> <!-- Main Menu Ends-->

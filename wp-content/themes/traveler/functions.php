@@ -832,7 +832,7 @@ function newThemeOptions_showBigBanner(){
 		}
 	}	
 }
-function photo_gallery($post_id, $size, $limit)
+function photo_gallery($post_id, $size)
 	{
 		global $wpdb;
 		$querystr = " SELECT 
@@ -844,8 +844,8 @@ function photo_gallery($post_id, $size, $limit)
 					  WHERE
 									" . $wpdb->prefix . "posts.post_type = \"attachment\"
 					  ORDER BY 
-								" . $wpdb->prefix . "posts.post_date DESC
-					  LIMIT " .$limit;
+								" . $wpdb->prefix . "posts.menu_order ASC
+					  ";
 		$pageposts = $wpdb->get_results($querystr, OBJECT);
 		
 		for($i=0;$i<count($pageposts);$i++)
@@ -988,7 +988,7 @@ add_action('admin_menu', 'newThemeOptions_add_admin');
 		$blog = get_bloginfo('template_url');
 		if ($pageposts)
 		{
-			return "<img src='".$attachment_size[0]."' width='600' height='220' alt='".$title."' />";
+			return "<img src='".$attachment_size[0]."' width='647' height='297' alt='".$title."' />";
 		}
 		else
 			return;
