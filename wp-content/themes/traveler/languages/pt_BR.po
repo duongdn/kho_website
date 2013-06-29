@@ -1,0 +1,432 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Gorilla Themes\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Gorilla Themes <support@gorillathemes.com>\n"
+"Language-Team: Gorilla Themes <support@gorillathemes.com>\n"
+"MIME-Version: 1.0\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#. Text in echo
+#: functions.php:290
+msgid " Enable All Banners"
+msgstr "Ativar todos os banners"
+
+#. Text in echo
+#: functions.php:314
+msgid " Enabled"
+msgstr "Ativado"
+
+#. Text in echo
+#: comments.php:64
+msgid " to post a comment."
+msgstr "para escrever um comentário."
+
+#. Text in function
+#: single.php:13
+#: comments.php:22
+#: index.php:122
+#: archive.php:15
+msgid "% comments"
+msgstr "% comentários"
+
+#. Text in function
+#: category.php:40
+#: archive.php:40
+msgid "&laquo; Older Entries"
+msgstr "&laquo; Posts Mais Antigos"
+
+#. Text in function
+#: comments.php:79
+msgid "(required)"
+msgstr "(obrigatório)"
+
+#. Text in echo
+#: author.php:36
+#: author.php:52
+#: category.php:31
+#: index.php:33
+#: index.php:119
+#: tag.php:59
+msgid "...more"
+msgstr "...mais"
+
+#. Text in function
+#: single.php:13
+#: comments.php:22
+#: index.php:122
+#: archive.php:15
+msgid "1 comment"
+msgstr "1 comentário"
+
+#. Text in echo
+#: author.php:12
+msgid "About: "
+msgstr "Sobre"
+
+#. Text in echo
+#: functions.php:282
+msgid "Advertisement Banner Management"
+msgstr "Gerenciamento dos banners de publicidade"
+
+#. Text in echo
+#: archive.php:7
+msgid "Archive for "
+msgstr "Arquivos para"
+
+#. Text in function
+#: tag.php:9
+msgid "Articles Tagged with: "
+msgstr "Artigos com a Tag:"
+
+#. Text in echo
+#: author.php:22
+msgid "Articles by: "
+msgstr "Artigos por:"
+
+#. Text in echo
+#: functions.php:301
+msgid "Banner Ad"
+msgstr "Banner de publicidade"
+
+#. Text in echo
+#: single.php:13
+msgid "By:"
+msgstr "Por:"
+
+#. Text in echo
+#: archive.php:15
+msgid "By: "
+msgstr "Por:"
+
+#. Text in echo
+#: functions.php:262
+msgid "Categories Submenu"
+msgstr "Submenu de Categorias"
+
+#. Text in echo
+#: functions.php:263
+msgid "Click on the Categories and Child Categories to Build Submenu and Dropdown Items. (If this is empty, please create Categories)."
+msgstr "Clique nas Categorias e Sub Categorias para construir submenu e itens selecionáveis. (se ficar em branco, por favor crie Categorias)."
+
+#. Text in echo
+#: comments.php:47
+msgid "Comments are closed."
+msgstr "Os comentários estão fechados."
+
+#. Text in echo
+#: functions.php:269
+msgid "Description"
+msgstr "Descrição"
+
+#. Text in echo
+#: header.php:65
+#: search.php:54
+msgid "Enter keywords and click 'Search'"
+msgstr "Insira a palavra-chave"
+
+#. Text in echo
+#: functions.php:307
+msgid "Enter the URL Link where this Banner Links To."
+msgstr "Inserir a URL de destino para este banner."
+
+#. Text in echo
+#: functions.php:305
+msgid "Enter the URL Path for this Banner Image."
+msgstr "Inserir a URL para a imagem do banner."
+
+#. Text in echo
+#: sidebar.php:20
+msgid "Featured Video"
+msgstr "Vídeo em destaque"
+
+#. Text in echo
+#: single.php:18
+#: archive.php:30
+msgid "Filed under : "
+msgstr "Arquivado em:"
+
+#. Text in echo
+#: sidebar.php:9
+msgid "Find Your Destination"
+msgstr "Encontre seu Destino"
+
+#. Text in echo
+#: multisearch.php:16
+msgid "Go"
+msgstr "Ir"
+
+#. Text in echo
+#: functions.php:310
+msgid "Google Adsense code: "
+msgstr "Código do Google Adsense"
+
+#. Text in echo
+#: header.php:48
+msgid "Home"
+msgstr "Início"
+
+#. Text in echo
+#: index.php:11
+#, fuzzy
+msgid "Hot Spots"
+msgstr "Hot Spots"
+
+#. Text in echo
+#: functions.php:249
+#, fuzzy
+msgid "Hot Spots Category"
+msgstr "Categoria Hot Spots"
+
+#. Text in echo
+#: functions.php:311
+msgid "If Adsense Publisher Code is Present, it will show as default banner. "
+msgstr "Se o código do AdSense estiver preenchido, será mostrado como banner padrão."
+
+#. Text in echo
+#: functions.php:304
+msgid "Image: "
+msgstr "Imagem:"
+
+#. Text in echo
+#: search.php:50
+msgid "Keyword not found, please try a new search."
+msgstr "Palavra não encontrada, por favor tente uma nova pesquisa."
+
+#. Text in function
+#: comments.php:57
+msgid "Leave a reply"
+msgstr "Deixe uma resposta"
+
+#. Text in function
+#: comments.php:57
+msgid "Leave a reply to %s"
+msgstr "Deixe uma resposta para %s"
+
+#. Text in echo
+#: comments.php:71
+msgid "Log out &raquo;"
+msgstr "Logout &raquo;"
+
+#. Text in echo
+#: comments.php:71
+msgid "Logged in as "
+msgstr "Conectado como %s."
+
+#. Text in echo
+#: comments.php:79
+msgid "Mail (will not be published) "
+msgstr "Email (não será publicado)"
+
+#. Text in echo
+#: sidebar.php:45
+msgid "Most Commented Articles"
+msgstr "Artigos mais comentados"
+
+#. Text in echo
+#: functions.php:268
+msgid "Name"
+msgstr "Nome"
+
+#. Text in echo
+#: comments.php:76
+msgid "Name "
+msgstr "Nome"
+
+#. Text in function
+#: category.php:41
+#: archive.php:41
+msgid "Newer Entries &raquo;"
+msgstr "Posts Mais Novos &raquo;"
+
+#. Text in function
+#: single.php:13
+#: comments.php:22
+#: index.php:122
+#: archive.php:15
+msgid "No comments"
+msgstr "Sem comentários"
+
+#. Text in echo
+#: page.php:24
+#: category.php:46
+#: archive.php:46
+#: tag.php:76
+msgid "Not Found"
+msgstr "Não encontrado"
+
+#. Text in echo
+#: 404.php:9
+msgid "Page not found! Please browse our sitemap to find your Article"
+msgstr "Página não encontrada! Por favor navegue por nosso Mapa do Site para encontrar seu artigo"
+
+#. Text in echo
+#: sidebar.php:62
+msgid "Photo Gallery"
+msgstr "Galeria de Fotos"
+
+#. Text in echo
+#: index.php:56
+msgid "Popular Tags"
+msgstr "Tags populares"
+
+#. Text in echo
+#: author.php:16
+msgid "Profile"
+msgstr "Perfil"
+
+#. Text in function
+#: page.php:15
+#: single.php:24
+#: archive.php:23
+msgid "Read more"
+msgstr "Leia mais"
+
+#. Text in echo
+#: functions.php:326
+msgid "Reset settings"
+msgstr "Restaurar configurações"
+
+#. Text in echo
+#: functions.php:325
+msgid "Save settings"
+msgstr "Salvar configuração"
+
+#. Text in function
+#: category.php:9
+msgid "Search Results for Category:  "
+msgstr "Pesquisar resultados para categoria:"
+
+#. Text in echo
+#: search.php:10
+msgid "Search Results for: "
+msgstr "Resultados da pesquisa para:"
+
+#. Text in echo
+#: functions.php:250
+msgid "Select a category for left sidebar articles"
+msgstr "Selecione uma categoria para os artigos da barra lateral"
+
+#. Text in echo
+#: functions.php:241
+msgid "Select your Style"
+msgstr "Selecionar o estilo"
+
+#. Text in echo
+#: 404.php:11
+msgid "Sitemap:"
+msgstr "Mapa do site:"
+
+#. Text in echo
+#: functions.php:301
+msgid "Size: "
+msgstr "Tamanho:"
+
+#. Text in function
+#: slider.php:1
+#: slider.php:68
+#: slider.php:98
+#: slider.php:106
+#: slider.php:114
+#: slider.php:124
+msgid "Slideshow"
+msgstr "Apresentação de Slides"
+
+#. Text in echo
+#: footer.php:18
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#. Text in echo
+#: functions.php:287
+#: functions.php:313
+msgid "Status: "
+msgstr "Status:"
+
+#. Text in echo
+#: multisearch.php:16
+msgid "Submit"
+msgstr "Enviar"
+
+#. Text in echo
+#: comments.php:90
+msgid "Submit Comment"
+msgstr "Enviar comentário"
+
+#. Text in echo
+#: footer.php:10
+msgid "Subscribe to our Newsletter"
+msgstr "Inscrever no feed de comentários"
+
+#. Text in echo
+#: functions.php:240
+msgid "Theme Style"
+msgstr "Estilo do Tema"
+
+#. Text in echo
+#: comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Esse post é protegido por senha. Digite a senha para ver os comentários."
+
+#. Text in echo
+#: index.php:77
+msgid "Travel News"
+msgstr "Notícias de Viagens"
+
+#. Text in echo
+#: author.php:14
+#: comments.php:82
+msgid "Website"
+msgstr "Site"
+
+#. Text in echo
+#: comments.php:64
+msgid "You must be "
+msgstr "Você tem que estar"
+
+#. Text in echo
+#: multisearch.php:16
+msgid "[Submit]"
+msgstr "[Enviar]"
+
+#. Text in echo
+#: footer.php:31
+msgid "and"
+msgstr "e"
+
+#. Text in function
+#: index.php:79
+#: sidebar.php:64
+msgid "gallery"
+msgstr "galeria"
+
+#. Text in echo
+#: footer.php:31
+msgid "is powered by"
+msgstr "é desenvolvido com"
+
+#. Text in echo
+#: comments.php:64
+msgid "logged in"
+msgstr "Autenticado como"
+
+#. Text in echo
+#: functions.php:234
+msgid "theme settings"
+msgstr "Configurações do Tema"
+
+#. Text in echo
+#: comments.php:22
+msgid "to"
+msgstr "para"
+
+#. Text in function
+#: index.php:79
+msgid "video"
+msgstr "vídeo"
+
