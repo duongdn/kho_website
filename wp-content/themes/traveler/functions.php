@@ -832,7 +832,7 @@ function newThemeOptions_showBigBanner(){
 		}
 	}	
 }
-function photo_gallery($post_id, $size)
+function photo_gallery($post_id, $size,$limit)
 	{
 		global $wpdb;
 		$querystr = " SELECT 
@@ -844,8 +844,8 @@ function photo_gallery($post_id, $size)
 					  WHERE
 									" . $wpdb->prefix . "posts.post_type = \"attachment\"
 					  ORDER BY 
-								" . $wpdb->prefix . "posts.menu_order ASC
-					  ";
+                		" . $wpdb->prefix . "posts.post_date DESC
+            		  LIMIT " .$limit; 
 		$pageposts = $wpdb->get_results($querystr, OBJECT);
 		
 		for($i=0;$i<count($pageposts);$i++)
