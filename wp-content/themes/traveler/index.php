@@ -15,7 +15,7 @@
 						$slideshow = get_cat_id(__("Slideshow","traveler"));   
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 						$limit = get_settings('posts_per_page');
-						$my_query = new WP_Query('cat=-'.$video.',-'.$slideshow.',-'.$gallery.',' .$show .'&showposts=3');
+						$my_query = new WP_Query('cat=-'.$video.',-'.$slideshow.',-'.$gallery.',' .$show .'&showposts=4');
 						while ($my_query->have_posts()) : $my_query->the_post();
 						$wp_query->in_the_loop = true;
 						if ( $post->ID == $do_not_duplicate ) continue;
@@ -57,7 +57,8 @@
 		$gallery = get_cat_id(__("gallery","traveler")); 
 		$slideshow = get_cat_id(__("Slideshow","traveler"));   
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		$limit = get_settings('posts_per_page');
+		//$limit = get_settings('posts_per_page');
+		$limit = 4;
 		$my_query = new WP_Query('cat=-'.$video.',-'.$slideshow.',-'.$gallery.',-' .$show .',-' .$noshow .'&showposts='.$limit.'&paged=' . $paged);
 		while ($my_query->have_posts()) : $my_query->the_post();
 		$wp_query->in_the_loop = true;

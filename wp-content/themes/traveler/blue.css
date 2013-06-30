@@ -529,7 +529,8 @@ input {
 	background:#f9f9f9;
 	border:1px solid #dadada;
 	margin:0 0 10px;
-	padding:20px 16px 16px;
+	padding:20px;
+	min-height: 115px;
 }
 
 a.posts_link {

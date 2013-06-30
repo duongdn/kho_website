@@ -843,6 +843,21 @@ function photo_gallery($post_id, $size,$limit)
 								" . $wpdb->prefix . "posts
 					  WHERE
 									" . $wpdb->prefix . "posts.post_type = \"attachment\"
+					  AND ID IN (SELECT meta_value 
+					  			 FROM " . $wpdb->prefix . "postmeta
+					  			 WHERE post_id IN ( SELECT object_id 
+					  			   					FROM " . $wpdb->prefix . "term_relationships
+													WHERE term_taxonomy_id = (SELECT term_taxonomy_id
+																		FROM " . $wpdb->prefix . "term_taxonomy
+																		WHERE taxonomy = 'category'
+																		AND term_id = ( SELECT option_value
+																						FROM " . $wpdb->prefix . "options
+																						WHERE option_name like '%randomCategoryPosts%'	
+																					  )
+																		) 
+													) 
+								)  
+					  			 				
 					  ORDER BY 
                 		" . $wpdb->prefix . "posts.post_date DESC
             		  LIMIT " .$limit; 
