@@ -342,17 +342,33 @@ input {
 	border:1px solid #ccc;
 }
 
+
 .search_input {
-	color:#666;
+	background: url("images/search-bg.png") no-repeat scroll 0 0 transparent;
+	color: white;
 	font-size:12px;
 	font-family:Helvetica;
-	font-weight:normal;
+	font-weight: bold;
 	padding:4px;
-	width:186px;
+	width:252px;
 	margin:14px 0 0 10px;
 	display:inline;
-	border:1px solid #ccc;
-	background:#f9f9f9;
+	border: none;
+	height: 20px;
+	text-indent: 5px;
+}
+.search_div {
+	overflow: hidden;
+    position: relative;	
+}
+.search_button {
+    background: url("images/search-btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    position: absolute;
+    right: 9px;
+    top: 20px;
+    width: 19px;
 }
 
 .subscribe_input {
