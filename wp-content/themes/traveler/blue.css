@@ -88,16 +88,16 @@ img{border:none;}
 
 a {
 	color:#408b36;
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 a:visited {
 	color:#408b36;
-	text-decoration:underline;
+	text-decoration:none;
 }
 
 a:hover {
-	text-decoration:underline;
+	text-decoration:none;
 	color:#84a567;
 }
 
@@ -543,7 +543,7 @@ a.posts_link {
 }
 
 a.posts_link:hover {
-	text-decoration:underline;
+	text-decoration:none;
 	color:#408b36;
 }
 
@@ -845,7 +845,7 @@ img.rcp-thumb{float: left;margin:3px 5px 3px 3px;background:#cbe1f6;padding:2px;
 	font-size:19px;
 	padding:0;
 	color:#000;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .post_blog h2 a:hover {
@@ -853,7 +853,7 @@ img.rcp-thumb{float: left;margin:3px 5px 3px 3px;background:#cbe1f6;padding:2px;
 	font-size:19px;
 	padding:0;
 	color:#666;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .post_content {
