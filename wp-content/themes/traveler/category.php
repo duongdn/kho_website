@@ -3,7 +3,7 @@
 	<?php if (have_posts()) : ?>
 	<?php $post = $posts[0];?>
 	<?php  if (is_month())  ?>
-	<div style="padding:20px 0px 0px 20px;"><h1><?php single_cat_title(__("Search Results for Category:  ","traveler")); ?></h1></div>
+	<div style="padding:20px 0px 0px 20px;"><h1><?php single_cat_title(__("Mục: ","traveler")); ?></h1></div>
 	<?php while (have_posts()) : the_post(); ?>
 				<div class="post_blog"><!-- Category Page Posts -->
  				<h2><a title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>

@@ -11,17 +11,15 @@
 					      || !dynamic_sidebar(3) ) : ?>
 					<?php endif; ?>
 				</div>
-				<div id="footer_right">					
- 					<?php if ( !function_exists('dynamic_sidebar')
-				      	  || !dynamic_sidebar() ) : ?>
-					<?php endif; ?>
+				<div id="footer_right">	
 				</div>
 			<div style="clear:both"></div>
                   <?php wp_footer();?>
 
-		</div>
-	</div><div id="copyright">
-	<p><a href="<?php get_bloginfo('url'); ?>"><?php echo get_bloginfo('name') ?></a> <?php _e("is powered by","khowebsite.net");?> <a href="http://www.khowebsite.net">khowebsite.net</a></p>
+	</div>
+	<div id="copyright">
+		<p><a href="<?php get_bloginfo('url'); ?>"><?php echo get_bloginfo('name') ?></a> <?php _e("is powered by","khowebsite.net");?> <a href="http://www.khowebsite.net">khowebsite.net</a></p>
+	</div>
 </div>
 </div> <!-- Grid Ends -->  
 </div> <!-- Layout Ends -->

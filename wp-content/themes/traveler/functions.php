@@ -861,13 +861,16 @@ function photo_gallery($post_id, $size,$limit)
 					  ORDER BY 
                 		" . $wpdb->prefix . "posts.post_date DESC
             		  LIMIT " .$limit; 
-		$pageposts = $wpdb->get_results($querystr, OBJECT);
 		
+		
+		$pageposts = $wpdb->get_results($querystr, OBJECT);
+
 		for($i=0;$i<count($pageposts);$i++)
 		{
+			$permalink = get_permalink();
+			$title = get_the_title();
 			$attachment_size=wp_get_attachment_image_src($pageposts[$i]->ID, $size);
-		    $permalink = get_permalink();
-		    $title = get_the_title();
+		    
 			if ($attachment_size)
 			{
 			
@@ -984,29 +987,15 @@ add_action('admin_menu', 'newThemeOptions_add_admin');
 <?php
 	function featured_images($post_id, $size)
 	{
-		global $wpdb;
-				$querystr = " SELECT 
-								ID AS 'ID',
-								post_excerpt AS 'imageTitle',	
-								guid AS 'imageGuid' 
-					  FROM
-								" . $wpdb->prefix . "posts
-					  WHERE
-									" . $wpdb->prefix . "posts.post_parent = ". $post_id . " 
-								AND	" . $wpdb->prefix . "posts.post_type = \"attachment\"
-					  ORDER BY 
-								" . $wpdb->prefix . "posts.menu_order ASC
-					  					  LIMIT 1";
-		$pageposts = $wpdb->get_row($querystr);
-		$attachment_size=wp_get_attachment_image_src($pageposts->ID, $size);
 		$title = get_the_title();
 		$blog = get_bloginfo('template_url');
-		if ($pageposts)
+		if (  (function_exists('has_post_thumbnail')) && (has_post_thumbnail())  ) 
 		{
-			return "<img src='".$attachment_size[0]."' width='647' height='297' alt='".$title."' />";
+			echo '<a href="'.get_permalink().'">'.get_the_post_thumbnail($post_id,array(647,297)).'</a>';
+		 } else {
+		echo'<a href="'.get_permalink().'">'.home_thumbs($post_id,'full').'</a>'; 
+		
 		}
-		else
-			return;
 	}
 ?>
 <?php

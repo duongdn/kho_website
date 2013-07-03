@@ -28,7 +28,7 @@
 		<div class="wrapper_right"><!--  Wrapper Right Starts-->
 			<div class='search_div'>
 			<form class="searchform" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-			<input type="text" name="s" value="<?php _e("Enter keywords and click 'Search'","traveler");?>" onclick="this.value='';" class="search_input" />
+			<input type="text" name="s" value="<?php _e("Enter keywords here","traveler");?>" onclick="this.value='';" class="search_input" />
 			<input type="submit" class="search_button" value="" /></form>
 			</div>
 		</div><!-- Wrapper Right Ends-->		

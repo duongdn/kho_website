@@ -2,9 +2,11 @@
    <div class="slider-wrap">
       <div id="main-photo-slider" class="csw">
          <div class="panelContainer">
-          <?php
-          $slideshow = get_cat_id(__("Slideshow","traveler"));   
-		  $recent = new WP_Query('cat='.$slideshow.'&showposts=1'); while ($recent->have_posts()) : $recent->the_post();
+          <?php          
+		  $news_cate = get_cat_id(__("Tin Tức Du Lịch","traveler"));
+		  $tour_cate = get_cat_id(__("Tour đã đi","traveler"));		  
+		  $recent = new WP_Query('cat='.$news_cate.','.$tour_cate.'&showposts=1'); 
+		  while ($recent->have_posts()) : $recent->the_post();
           $title = get_the_title();   
           ?>
            <div class="panel" title="<?php echo $title ?>"> <!--- Panel 1 starts -->
@@ -17,7 +19,13 @@
              </div>
           </div><!--- Panel 1 ends -->
 		<?php endwhile; ?>
-		<?php $slideshow = get_cat_id(__("Slideshow","traveler"));     $recent = new WP_Query('cat='.$slideshow.'&showposts=1&offset=1'); while ($recent->have_posts()) : $recent->the_post(); $title = get_the_title(); ?>
+		<?php 
+		$news_cate = get_cat_id(__("Tin Tức Du Lịch","traveler"));
+		  $tour_cate = get_cat_id(__("Tour đã đi","traveler"));		  
+		  $recent = new WP_Query('cat='.$news_cate.','.$tour_cate.'&showposts=1&offset=1'); 
+		  while ($recent->have_posts()) : $recent->the_post();
+          $title = get_the_title();   
+		?>
 		<div class="panel" title="<?php echo $title ?>">  <!--- Panel 2 starts -->
            <div class="wrapper">
               <?php echo'<a href="'.get_permalink().'">'.featured_images($post->ID,'full').'</a>'; ?><div style="clear:both;"></div>						
@@ -28,8 +36,14 @@
               </div>
            </div> <!--- Panel 2 ends -->
 		<?php endwhile; ?>
-        <?php $slideshow = get_cat_id(__("Slideshow","traveler"));     $recent = new WP_Query('cat='.$slideshow.'&showposts=1&offset=2'); while ($recent->have_posts()) : $recent->the_post(); $title = get_the_title(); ?>
-        <div class="panel" title="<?php echo $title ?>">   <!--- Panel 3 starts -->
+        <?php 
+		$news_cate = get_cat_id(__("Tin Tức Du Lịch","traveler"));
+		  $tour_cate = get_cat_id(__("Tour đã đi","traveler"));		  
+		  $recent = new WP_Query('cat='.$news_cate.','.$tour_cate.'&showposts=1&offset=2'); 
+		  while ($recent->have_posts()) : $recent->the_post();
+          $title = get_the_title();   
+		?>
+		<div class="panel" title="<?php echo $title ?>">   <!--- Panel 3 starts -->
            <div class="wrapper">
 			  <?php echo'<a href="'.get_permalink().'">'.featured_images($post->ID,'full').'</a>';?> <div style="clear:both;"></div>						
 			  <div class="photo-meta-data">
@@ -39,8 +53,14 @@
                </div>
             </div>
         <?php endwhile; ?> <!--- Panel 3 ends -->
-        <?php $slideshow = get_cat_id(__("Slideshow","traveler"));     $recent = new WP_Query('cat='.$slideshow.'&showposts=1&offset=3'); while ($recent->have_posts()) : $recent->the_post(); $title = get_the_title(); ?>
-        <div class="panel" title="<?php echo $title ?>"> <!--- Panel 4 starts -->
+        <?php 
+		$news_cate = get_cat_id(__("Tin Tức Du Lịch","traveler"));
+		  $tour_cate = get_cat_id(__("Tour đã đi","traveler"));		  
+		  $recent = new WP_Query('cat='.$news_cate.','.$tour_cate.'&showposts=1&offset=3'); 
+		  while ($recent->have_posts()) : $recent->the_post();
+          $title = get_the_title();   
+		?>
+		<div class="panel" title="<?php echo $title ?>"> <!--- Panel 4 starts -->
            <div class="wrapper">
 			 <?php echo'<a href="'.get_permalink().'">'.featured_images($post->ID,'full').'</a>';?> <div style="clear:both;"></div>
 			 <div class="photo-meta-data">
